@@ -2,16 +2,16 @@ import React from "react"
 import Footer from "../components/footer"
 import Header from "../components/header"
 import styled from "styled-components"
-import "typeface-oswald"
 import Nav from "../components/nav"
+import "./layout.css"
 
 const Div = styled.div`
   max-width: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: oswald;
   background: rgb(255, 255, 255);
+  font-family: oswald;
 `
 const Main = styled.div`
   display: flex;
