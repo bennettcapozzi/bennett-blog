@@ -5,12 +5,14 @@ import styled from "styled-components"
 import Nav from "../components/nav"
 
 const Div = styled.div`
-  max-width: 600px;
+  max-width: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background: rgb(255, 255, 255);
   font-family: oswald;
+  margin: auto;
+  padding: 0 1rem;
 `
 const Main = styled.div`
   display: flex;
@@ -20,13 +22,7 @@ const Main = styled.div`
 
 export default function Layout({ children }) {
   return (
-    <Div
-      style={{
-        margin: `auto`,
-        maxWidth: 800,
-        padding: `0 1rem`,
-      }}
-    >
+    <Div>
       <Header />
       <Nav />
       <Main>{children}</Main>

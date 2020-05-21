@@ -23,41 +23,29 @@ const LinkBox = styled.div`
   padding: 5px;
 `
 
+const StyledLink = styled(Link)`
+  color: black;
+  text-decoration: none;
+`
+
 export default function Nav({ children }) {
+  const links = [
+    { to: "/", title: "About Me" },
+    { to: "/work_experience", title: "Work Experience" },
+    { to: "/blog", title: "Blog" },
+    { to: "/contact", title: "Contact Me" },
+  ]
+
   return (
     <SiteNav>
-      <LinkBox>
-        <Link
-          style={{ color: "black", textDecoration: "none", fontSize: "medium" }}
-          to="/"
-        >
-          About Me
-        </Link>
-      </LinkBox>
-      <LinkBox>
-        <Link
-          style={{ color: "black", textDecoration: "none", fontSize: "medium" }}
-          to="/work_experience/"
-        >
-          Work Experience
-        </Link>
-      </LinkBox>
-      <LinkBox>
-        <Link
-          style={{ color: "black", textDecoration: "none", fontSize: "medium" }}
-          to="/blog/"
-        >
-          Blog
-        </Link>
-      </LinkBox>
-      <LinkBox>
-        <Link
-          style={{ color: "black", textDecoration: "none", fontSize: "medium" }}
-          to="/contact/"
-        >
-          Contact
-        </Link>
-      </LinkBox>
+      {links.map(link => {
+        return (
+          <LinkBox>
+            <StyledLink to={link.to}>{link.title}</StyledLink>
+          </LinkBox>
+        )
+      })}
+
       {children}
     </SiteNav>
   )
