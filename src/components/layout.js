@@ -3,7 +3,6 @@ import Footer from "../components/footer"
 import Header from "../components/header"
 import styled from "styled-components"
 import Nav from "../components/nav"
-import "./layout.css"
 
 const Div = styled.div`
   max-width: 600px;
