@@ -5,6 +5,7 @@ import styled from "styled-components"
 const FlexBox = styled.div`
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 `
 
 const Column1 = styled.div`
@@ -17,15 +18,23 @@ const Column1 = styled.div`
 const Picture = styled.img`
     max-width: 400px;
     border-radius: 5px;
-    position: relative;
-    margin: 25px;
+    margin: 12px;
+    margin-top: 24px;
     opacity: .9;
+    @media (max-width: 450px) {
+      width: 300px;
+    }
+    @media (max-width: 370px) {
+      width: 250px;
+    }
   }`
 
 const Column2 = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
+  min-width: 300px;
+  margin: 12px;
 `
 
 export default function Home() {

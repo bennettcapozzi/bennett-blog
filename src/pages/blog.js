@@ -2,6 +2,16 @@ import React from "react"
 import Layout from "../components/layout"
 import BlogPost from "../components/blogPost"
 import { graphql } from "gatsby"
+import styled from "styled-components"
+
+const BlogHeader = styled.div`
+  margin: auto;
+  max-width: 800px;
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 32px;
+  margin-bottom: 12px;
+`
 
 const BlogPage = ({
   data: {
@@ -13,7 +23,7 @@ const BlogPage = ({
     .map(edge => <BlogPost key={edge.node.id} post={edge.node} />)
   return (
     <Layout>
-      <h1>Blog Posts</h1>
+      <BlogHeader>Blog Posts</BlogHeader>
       <div>{Posts}</div>
     </Layout>
   )

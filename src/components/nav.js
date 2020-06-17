@@ -21,6 +21,9 @@ const LinkBox = styled.div`
   border-right: 1px solid rgba(194, 166, 155, 0.479);
   border-left: 1px solid rgba(194, 166, 155, 0.479);
   padding: 5px;
+  @media (max-width: 450px) {
+    font-size: small;
+  }
 `
 
 const StyledLink = styled(Link)`

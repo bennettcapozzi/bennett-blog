@@ -4,14 +4,33 @@ import styled from "styled-components"
 
 const Div = styled.div`
   margin: auto;
-  padding-left: 96px;
-  max-width: 800px;
+  max-width: 600px;
 `
 const WorkHeader = styled.div`
+  margin: auto;
   max-width: 800px;
   font-size: 32px;
   font-weight: bold;
-  margin-top: 21.44px;
+  margin-top: 32px;
+  margin-bottom: 24px;
+  @media (max-width: 450px) {
+    font-size: 24px;
+  }
+`
+const JobHeader = styled.div`
+  font-size: 24px;
+  font-weight: bold;
+  @media (max-width: 450px) {
+    font-size: 16px;
+  }
+`
+const JobDetails = styled.div`
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 8px;
+  @media (max-width: 450px) {
+    font-size: 14px;
+  }
 `
 
 export default function Work() {
@@ -19,7 +38,8 @@ export default function Work() {
     <Layout>
       <WorkHeader>Work Experience</WorkHeader>
       <Div>
-        <h2>Via Transportation -- Expansion Associate -- New York City</h2>
+        <JobHeader>Via Transportation</JobHeader>
+        <JobDetails>Expansion Associate - NYC</JobDetails>
         <ul>
           <li>
             Launching on-demand microtransit services in cities like Austin,
@@ -33,7 +53,8 @@ export default function Work() {
             for technological innovation
           </li>
         </ul>
-        <h2>Booz Allen Hamilton -- Analyst -- Riyadh</h2>
+        <JobHeader>Booz Allen Hamilton</JobHeader>
+        <JobDetails>Analyst - Riyadh</JobDetails>
         <ul>
           <li>
             Supported transformation efforts in key Saudi government ministries
@@ -47,7 +68,8 @@ export default function Work() {
             internationally located team
           </li>
         </ul>
-        <h2>Boston Foods -- Director of Operations -- Boston</h2>
+        <JobHeader>Boston Foods</JobHeader>
+        <JobDetails>Director of Operations - Boston</JobDetails>
         <ul>
           <li>
             Led a volunteer-run grocery service that assembles and distributes
