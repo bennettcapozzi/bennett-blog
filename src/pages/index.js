@@ -35,6 +35,13 @@ const Column2 = styled.div`
   align-items: center;
   min-width: 300px;
   margin: 12px;
+  @media (max-width: 450px) {
+    width: 400px;
+  }
+  @media (max-width: 370px) {
+    width: 250px;
+  }
+}
 `
 
 export default function Home() {
