@@ -16,18 +16,18 @@ const Column1 = styled.div`
   align-items: center;
 `
 const Picture = styled.img`
-    max-width: 400px;
-    border-radius: 5px;
-    margin: 12px;
-    margin-top: 24px;
-    opacity: .9;
-    @media (max-width: 450px) {
-      width: 300px;
-    }
-    @media (max-width: 370px) {
-      width: 250px;
-    }
-  }`
+  max-width: 400px;
+  border-radius: 5px;
+  margin: 12px;
+  margin-top: 24px;
+  opacity: 0.9;
+  @media (max-width: 450px) {
+    width: 300px;
+  }
+  @media (max-width: 370px) {
+    width: 250px;
+  }
+`
 
 const Column2 = styled.div`
   flex: 1;
@@ -36,12 +36,9 @@ const Column2 = styled.div`
   min-width: 300px;
   margin: 12px;
   @media (max-width: 450px) {
-    width: 400px;
-  }
-  @media (max-width: 370px) {
     width: 250px;
+    min-width: 200px;
   }
-}
 `
 
 export default function Home() {
@@ -69,7 +66,7 @@ export default function Home() {
               government affairs, tech, and international relations.
             </p>
             <p>
-              I have a B.A. in History & Literature and a citation in Arabic
+              I have a B.A. in History and Literature and a citation in Arabic
               from Harvard College where I focused on American History and
               Middle Eastern Studies.
             </p>

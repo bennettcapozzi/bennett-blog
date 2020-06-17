@@ -33,10 +33,10 @@ const StyledLink = styled(Link)`
 
 export default function Nav({ children }) {
   const links = [
-    { to: "/", title: "About Me" },
-    { to: "/work_experience", title: "Work Experience" },
-    { to: "/blog", title: "Blog" },
-    { to: "/contact", title: "Contact Me" },
+    { key: 1, to: "/", title: "About Me" },
+    { key: 2, to: "/work_experience", title: "Work Experience" },
+    { key: 3, to: "/blog", title: "Blog" },
+    { key: 4, to: "/contact", title: "Contact Me" },
   ]
 
   return (
@@ -44,11 +44,12 @@ export default function Nav({ children }) {
       {links.map(link => {
         return (
           <LinkBox>
-            <StyledLink to={link.to}>{link.title}</StyledLink>
+            <StyledLink key={link.key} to={link.to}>
+              {link.title}
+            </StyledLink>
           </LinkBox>
         )
       })}
-
       {children}
     </SiteNav>
   )
