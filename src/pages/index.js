@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import Layout from "../components/layout"
 import styled from "styled-components"
 
@@ -69,6 +70,10 @@ export default function Home() {
               I have a B.A. in History and Literature and a citation in Arabic
               from Harvard College where I focused on American History and
               Middle Eastern Studies.
+            </p>
+            <p>
+              Sign up for{" "}
+              <Link to="http://eepurl.com/he5biv">my newsletter</Link>!
             </p>
           </div>
         </Column2>
