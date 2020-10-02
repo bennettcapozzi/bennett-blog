@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
 import styled from "styled-components"
 
@@ -72,8 +71,7 @@ export default function Home() {
               Middle Eastern Studies.
             </p>
             <p>
-              Sign up for{" "}
-              <Link to="http://eepurl.com/he5biv">my newsletter</Link>!
+              Sign up for <a href="http://eepurl.com/he5biv">my newsletter</a>!
             </p>
           </div>
         </Column2>
