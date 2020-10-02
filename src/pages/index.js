@@ -70,6 +70,9 @@ export default function Home() {
               from Harvard College where I focused on American History and
               Middle Eastern Studies.
             </p>
+            <p>
+              Sign up for <a href="http://eepurl.com/he5biv">my newsletter</a>!
+            </p>
           </div>
         </Column2>
       </FlexBox>
