@@ -4,8 +4,9 @@ import { Link } from "gatsby"
 export default function Header({ children }) {
   return (
     <div style={{ margin: "auto", paddingTop: "24px", paddingBottom: "40px" }}>
+      Under Construction. You can find me on Substack:
       <Link
-        to="/"
+        to="www.bennettcapozzi.substack.com"
         style={{
           color: "black",
           textDecoration: "none",
@@ -13,7 +14,7 @@ export default function Header({ children }) {
           fontWeight: "bold",
         }}
       >
-        Bennett Capozzi
+        here
       </Link>
       {children}
     </div>
