@@ -7,12 +7,6 @@ export default function Header({ children }) {
       Under Construction. You can find me on Substack
       <Link
         to="www.bennettcapozzi.substack.com"
-        style={{
-          color: "black",
-          textDecoration: "none",
-          fontSize: "36px",
-          fontWeight: "bold",
-        }}
       >
         here
       </Link>
