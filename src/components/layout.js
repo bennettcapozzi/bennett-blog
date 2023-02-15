@@ -24,8 +24,6 @@ export default function Layout({ children }) {
   return (
     <Div>
       <Header />
-      <Nav />
-      <Main>{children}</Main>
       <Footer />
     </Div>
   )
